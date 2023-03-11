@@ -1,0 +1,20 @@
+<div class="imprintPage">
+    <app-header>
+    </app-header>
+    <div class="imprintContent">
+        <h1>{{ 'IMPRINT_TITLE' | translate}}</h1>
+        <h4>{{ 'IMPRINT_TMG' | translate}}</h4>
+        <div class="imprintSection">
+            <div><img src="/assets/person.svg"></div>
+            <div>
+                <p>Philipp Hahn</p>
+                <p>Henry-Dunant-Str. 7</p>
+                <p>91522 Ansbach</p>
+                <p>{{ 'IMPRINT_GERMANY' | translate}}</p>
+                <p><a href="mailto:philipp@raffaelhahn.de">philipp@raffaelhahn.de</a></p>
+            </div>
+        </div>
+    </div>
+    <app-footer [activateImprint]="false"></app-footer>
+    <img class="bigBackgroundIcon" src="/assets/dienstapp_icon_nobckgrnd.png">
+</div>

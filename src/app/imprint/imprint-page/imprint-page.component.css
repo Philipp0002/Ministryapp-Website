@@ -1,0 +1,56 @@
+h1 {
+    padding-bottom: 16px;
+}
+
+.bigBackgroundIcon {
+    position: absolute;
+    z-index: -20;
+    filter: invert() opacity(0.1);
+    bottom: 10px;
+    right: 10px;
+    transform: scale(2.5);
+    transition: transform 0.5s ease, bottom 0.5s ease;
+}
+
+.imprintContent {
+    width: fit-content;
+    padding: 32px;
+    border-radius: 32px;
+    max-width: 30cm;
+    box-sizing: border-box;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 32px;
+    background-color: #ece2bf;
+}
+
+.imprintSection {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.imprintSection img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media screen and (max-width: 810px) {
+    .bigBackgroundIcon {
+        bottom: -40%;
+        transform: scale(1.5);
+    }
+}
+
+.imprintPage {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+app-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,9 @@
+<div class="navbar">
+    <a class="branding" routerLink='/'>
+        <img src="/assets/dienstapp_icon_nobckgrnd.png" alt="Icon"> <span>{{ 'MINISTRYAPP' | translate}}</span>
+    </a>
+    <a class="language" (click)="changeLanguage()">
+        <span>{{ (ministryTranslator.currentLang === 'de' ? 'SWITCH_ENGLISH' : 'SWITCH_GERMAN') | translate}}</span>
+        <img [src]="ministryTranslator.currentLang === 'de' ? '/assets/gb.svg' : '/assets/de.svg'">
+    </a>
+</div>

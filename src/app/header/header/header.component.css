@@ -1,0 +1,54 @@
+.navbar {
+    padding: 8px;
+    height: 40px;
+    display: flex;
+    margin: 0;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar .branding,
+.navbar .language {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 9999px;
+    transition: background-color 0.15s ease;
+    font-weight: 700;
+}
+
+.navbar .branding img {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+    filter: invert();
+}
+
+.navbar .branding:hover,
+.navbar .language:hover {
+    background-color: #ffffff9f;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    cursor: pointer;
+}
+
+.navbar .language img {
+    height: 24px;
+    width: 24px;
+    margin-left: 8px;
+    border-radius: 9999px;
+    overflow: hidden;
+}

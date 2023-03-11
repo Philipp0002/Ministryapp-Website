@@ -1,0 +1,199 @@
+.hero {
+    background: rgb(142, 187, 209);
+    background: radial-gradient(circle, rgba(142, 187, 209, 1) 0%, rgba(255, 190, 11, 1) 60%, rgba(235, 124, 60, 1) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    height: 800px;
+    display: flex;
+    flex-flow: column;
+}
+
+.hero .heroGrid {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    max-width: 30cm;
+    margin: auto;
+}
+
+.hero .heroGrid * {
+    display: flex;
+}
+
+.heroContent {
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.hero h1 {
+    font-size: 3.75rem;
+    flex-wrap: wrap;
+    line-height: 3.75rem;
+}
+
+.hero h1 span {
+    background: linear-gradient(90deg, rgba(255, 0, 110, 1) 0%, rgba(131, 56, 236, 1) 50%, rgba(58, 134, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 40px #fff;
+    position: relative;
+    width: fit-content;
+    display: inline-block !important;
+}
+
+.hero h1 span::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, rgba(255, 0, 110, 1) 0%, rgba(131, 56, 236, 1) 50%, rgba(58, 134, 255, 1) 100%);
+}
+
+.hero p {
+    font-size: 1.875rem;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.hero .heroGrid img {
+    width: 400px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.highlight {
+    background-color: #edf6f9;
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.highlight>div,
+.highlight>h1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-width: 30cm;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.highlight>h1 {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.highlight>div>h1 {
+    font-size: 45px;
+}
+
+.card {
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: #ece2bf;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    transition: border-radius 0.15s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    border-radius: 50px;
+}
+
+.card-head {
+    height: 150px;
+    width: 100%;
+    border-radius: 32px;
+    background-color: #e8bd33;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.card-head img {
+    height: 100%;
+    box-sizing: border-box;
+    width: auto;
+}
+
+.card-body {
+    padding-top: 10px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.card-body h1 {
+    font-size: 24px;
+}
+
+.card-no-title {
+    background-color: #ffddd2;
+}
+
+.card-no-title>.card-body {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.downloads {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+}
+
+.downloads img {
+    width: 100%;
+}
+
+.add-padding {
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
+}
+
+@media screen and (max-width: 770px) {
+    .highlight>div,
+    .highlight>h1 {
+        max-width: 30cm;
+        display: inherit;
+        gap: 16px;
+    }
+    .card {
+        margin-bottom: 16px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .heroGrid {
+        display: block !important;
+    }
+    .heroContent {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .hero {
+        height: auto;
+    }
+}
