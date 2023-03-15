@@ -6,3 +6,50 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+
+.bigBackgroundIcon {
+    position: absolute;
+    z-index: -20;
+    filter: invert() opacity(0.1);
+    bottom: 10px;
+    right: 10px;
+    transform: scale(2.5);
+    transition: transform 0.5s ease, bottom 0.5s ease;
+}
+
+.contactSection {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.contactSection img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.infoBoxContent {
+    width: fit-content;
+    padding: 32px;
+    border-radius: 32px;
+    max-width: 30cm;
+    box-sizing: border-box;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 32px;
+    background-color: #ece2bf;
+}
+
+@media screen and (max-width: 810px) {
+    .bigBackgroundIcon {
+        bottom: -40%;
+        transform: scale(1.5);
+    }
+    .infoBoxContent {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 32px;
+        width: 100%;
+        background-color: #ece2bf;
+    }
+}

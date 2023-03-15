@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page/main-page.component';
 import { HeaderComponent } from './header/header/header.component';
 import { FooterComponent } from './footer/footer/footer.component';
+import { PrivacyPageComponent } from './privacy/privacy-page/privacy-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer/footer.component';
     MainPageComponent,
     HeaderComponent,
     FooterComponent,
-    ImprintPageComponent
+    ImprintPageComponent,
+    PrivacyPageComponent
   ],
   imports: [
     BrowserModule,

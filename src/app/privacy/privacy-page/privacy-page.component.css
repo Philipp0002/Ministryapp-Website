@@ -1,0 +1,27 @@
+h1 {
+    padding-bottom: 16px;
+}
+
+h3,
+ul {
+    margin-top: 16px;
+}
+
+li {
+    margin-left: 16px;
+}
+
+.effectiveText {
+    margin-top: 16px;
+}
+
+app-footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.imprintPage {
+    overflow: hidden;
+    position: relative;
+}
