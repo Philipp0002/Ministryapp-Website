@@ -99,5 +99,7 @@
             }
         }
     },
-    "defaultProject": "dienstappwebsite"
+    "cli": {
+      "analytics": false
+    }
 }
