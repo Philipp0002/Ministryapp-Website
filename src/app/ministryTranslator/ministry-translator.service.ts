@@ -33,7 +33,7 @@ export class MinistryTranslatorService {
       SWITCH_ENGLISH: 'English page',
       SWITCH_GERMAN: 'German page',
       IMPRINT_TITLE: 'Imprint',
-      IMPRINT_TMG: 'Liability and information according to § 5 TMG',
+      IMPRINT_TMG: 'Liability and information according to § 5 DDG',
       IMPRINT_GERMANY: 'Germany',
 
       PP_TITLE: "Privacy Policy",
@@ -77,7 +77,7 @@ export class MinistryTranslatorService {
       SWITCH_ENGLISH: 'Englische Seite',
       SWITCH_GERMAN: 'Deutsche Seite',
       IMPRINT_TITLE: 'Impressum',
-      IMPRINT_TMG: 'Angaben gemäß § 5 TMG',
+      IMPRINT_TMG: 'Angaben gemäß § 5 DDG',
       IMPRINT_GERMANY: 'Deutschland',
 
       PP_TITLE: "Datenschutzerklärung",
