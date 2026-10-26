@@ -1,6 +1,8 @@
 <div class="footer">
-    <span>©{{date| date:'yyyy'}} Philipp Hahn</span>
-    <a class="imprintLink" routerLink='/imprint' *ngIf="activateImprint">
-        <span>{{ 'IMPRINT_TITLE' | translate}}</span>
+  <span>©{{date| date:'yyyy'}} Philipp Hahn</span>
+  @if (activateImprint) {
+    <a class="imprintLink" routerLink='/imprint'>
+      <span>{{ 'IMPRINT_TITLE' | translate}}</span>
     </a>
+  }
 </div>
