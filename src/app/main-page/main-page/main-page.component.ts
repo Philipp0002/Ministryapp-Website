@@ -1,5 +1,5 @@
 import { MinistryTranslatorService } from './../../ministryTranslator/ministry-translator.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -7,6 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
     selector: 'app-main-page',
     templateUrl: './main-page.component.html',
     styleUrls: ['./main-page.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class MainPageComponent implements OnInit {
